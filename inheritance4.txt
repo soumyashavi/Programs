@@ -1,0 +1,104 @@
+class figure
+
+(data member)
+dim1 
+dim 2 
+
+void read()
+void display()
+
+class rectangle extends figure
+(data member)
+area
+
+void calcultae()
+void display()
+
+
+
+class  figure
+{
+int dim1,dim2;
+
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the value of dim1,dim2");
+dim1=scan.nextInt();
+dim2=scan.nextInt();
+}
+void display()
+{
+system.out.println("dim1="+dim1 "dim2="+dim2);
+}
+}
+class rectangle extends figure
+
+{
+
+float area;
+
+void calculate()
+{
+super.read();
+area=(dim1*dim2);
+
+}
+void display()
+{
+super.display();
+system.out.println("area="+area);
+}
+}
+
+
+
+class triangle extends figure
+
+{
+
+float area;
+
+void calculate()
+{
+super.read();
+area=(dim1*dim2)/2;
+
+}
+void display()
+{
+super.display();
+system.out.println("area="+area);
+}
+}
+
+class rectangle extends figure
+{
+float area;
+
+void calculate()
+{
+super.read();
+area=(dim1*dim2);
+
+}
+void display()
+{
+super.display();
+system.out.println("area="+area);
+}
+}
+class Main
+{
+public static void main(string args[])
+{
+rectangle R=new rectangle();
+R.calculate();
+R.display();
+
+
+triangle t=new triangle();
+t.calculate();
+t.display();
+
+}

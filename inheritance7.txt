@@ -1,0 +1,56 @@
+Data 1
+a:int 
+void read()
+void display()
+
+Data 2
+b:int 
+void read()
+void display()
+
+class Data1
+{
+int a;
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the value of a:");
+a=scan.nextInt();
+
+}
+void dispaly()
+{
+system.out.println("a="+a);
+}
+}
+class Data2 extends Data1{
+int a;
+void readb()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the value of a:");
+a=scan.nextInt();
+
+}
+void dispalyb()
+{
+system.out.println("a="+a);
+}
+
+}
+
+Class Main()
+{
+Data2 d=new Data2();
+d.read();
+d.readb
+d.display();
+d.dispalyb();
+}
+
+output:
+enter the value of a
+10
+enter the value of b
+20
+display 10 20

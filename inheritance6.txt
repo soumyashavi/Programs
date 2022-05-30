@@ -1,0 +1,45 @@
+class student
+{
+int roll;
+string name;
+int sem;
+
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the value of roll,name,sem");
+roll=scan.nextInt();
+name=scan.nextLine();
+sem=scan.nextInt();
+}
+void display()
+{
+system.out.println("roll="+roll,"name="+name,"sem="+sem);
+}
+}
+class Marks extends student
+{
+int m1,m2;
+
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the value m1,m2");
+m1=scan.nextInt();
+m2=scan.nextInt();
+}
+void display()
+{
+system.out.println("m1="+m1,"m2="+m2);
+}
+}
+class Main
+{
+public static void Main(string args[])
+{
+Marks b1=new Marks();
+b1.read();
+b1.display();
+
+}
+}

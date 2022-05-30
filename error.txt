@@ -1,0 +1,21 @@
+  private List<IndependentClinic> GetIndependentClinicData(List<JToken> result)
+        {
+            
+
+            JObject jObject = new JObject();
+            List<IndependentClinic> allIndClinic = new List<IndependentClinic>();
+            allIndClinic = result[1].Values<JObject>().Select(p => new IndependentClinic
+            {
+                independentClinicAddress1 = p.Value<JArray>(ProviderResponseConstants.indClinicAdd1)?.Values<string>().ToArray() ?? new string[] { StringConstants.empty },
+                independentClinicAddress2 = p.Value<JArray>(ProviderResponseConstants.indClinicAdd2)?.Values<string>().ToArray() ?? new string[] { StringConstants.empty },
+                independentClinicCity = p.Value<JArray>(ProviderResponseConstants.indClinicCity)?.Values<string>().ToArray() ?? new string[] { StringConstants.empty },
+                independentClinicName = p.Value<JArray>(ProviderResponseConstants.indClinicName)?.Values<string>().ToArray() ?? new string[] { StringConstants.empty },
+                independentClinicPhone = p.Value<JArray>(ProviderResponseConstants.indClinicPhone)?.Values<string>().ToArray() ?? new string[] { StringConstants.empty },
+                independentClinicState = p.Value<JArray>(ProviderResponseConstants.indClinicState)?.Values<string>().ToArray() ?? new string[] { StringConstants.empty },
+                independentClinicZip = p.Value<JArray>(ProviderResponseConstants.indClinicZip)?.Values<string>().ToArray() ?? new string[] { StringConstants.empty },
+                independentClinicLat= p.Value<JArray>(ProviderResponseConstants.lat)?.Values<string>().ToArray() ?? new string[] { StringConstants.empty},
+
+            }).ToList();
+
+            return allIndClinic;
+        }

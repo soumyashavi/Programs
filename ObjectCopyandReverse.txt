@@ -1,0 +1,44 @@
+class array
+{
+int a[],siz;
+void inti(int n)
+{
+siz=n;
+a=new int[siz];
+}
+void read()
+{
+console.writeline("enter +siz+ array");
+for(int i=0;i<siz;i++)
+a[i]=convert.Toint32(console.readLine());
+a[siz-1]=a[i];
+siz=siz--;
+}
+Console.writeline(reverse array is);
+for(int k=0;k<n.lenght;++)
+{
+Console.writeline(a[k]);
+}
+}
+void display()
+{
+console.writeline("sum of array is");
+sum=a[i]+b[k];
+console.writeline(sum);
+}
+}
+Class Main()
+{
+public static void Main(string args[])
+{
+int n;
+n=convert.toint32(console.readLine());
+Array A1=new Array();
+Array A2=new Array();
+Array A3=new Array();
+A1.init(n);
+A2.read();
+A3.display();
+
+}
+}

@@ -1,0 +1,94 @@
+
+Inheritance
+
+acquiring thr features of one class to another class is called as inheritance
+-> to avoid code redencecy
+
+
+class A  ----super class/Base class
+
+
+Class B-------child class/child class
+
+The class from which we inherit the features is called as super class or parent class
+The class which inherit the features is called as child class or sub class
+If super class object is created then it can have access to the feautures of super class only
+If Sub class object is created then it can access both child class and parent class.
+
+Types Of inheritance
+
+1.single level
+
+Super
+
+Sub
+
+Sytenx:
+
+class super{
+---
+---
+}
+
+class sub extends super{
+--
+--}
+
+2.Multi level
+super
+
+sub1
+
+sub2
+
+syntax:
+
+class super{
+}
+class sub1 extends super{
+}
+class sub2 extends super{
+}
+
+3.Multiple inheritance is not possible
+
+super1  super2
+     sub
+	 
+	 
+4.Hirerechial inheritance
+
+    super
+sub1  sub2 sub3 ----
+
+
+class super{
+}
+class sub1 extends super{
+}
+class sub2 extends super{
+}
+
+
+5.Hybrid inhertance
+
+   super
+
+  sub1   sub2
+  
+  sub3   sub4 sub5
+
+
+Class Super{
+}
+Class sub1 extend super{
+}
+class sub2 extends super{
+}
+class sub3 	extends sub1{
+} 
+class sub4 extends sub2{
+}
+class sub5 extends sub4[
+]
+  

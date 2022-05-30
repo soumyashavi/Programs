@@ -1,0 +1,64 @@
+class  Data
+{
+
+int a,b;
+
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the value of a,b");
+a=scan.nextInt();
+b=scan.nextInt();
+}
+void display()
+{
+system.out.println("a="+a "b="+b);
+}
+}
+class sum extends Data
+{
+int s;
+
+
+void calcute()
+{
+super.read();
+s=a+b;
+}
+void display()
+{
+super.display();
+system.out.println("s="+s );
+}
+}
+
+class subtraction extends Data
+{
+int sub;
+
+void calcute()
+{
+sub=a-b;
+system.out.println("s="+s );
+}
+
+}
+void display()
+{
+super.display();
+system.out.println("usn="+usn "m1="+m1 "m2="+m2);
+}
+}
+
+class Main
+{
+public static void main(string args[])
+{
+sum s=new sum();
+s.calcute();
+s.display();
+
+subtraction sub=new subtraction();
+sub.read();
+sub.display();
+}

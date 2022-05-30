@@ -1,0 +1,52 @@
+sorting of aray
+
+
+{
+int a[],siz;
+int temp=0;
+void inti(int n)
+{
+siz=n;
+a=new int[siz];
+}
+void read()
+{
+console.writeline("enter +siz+ array");
+for(int i=0;i<siz.lenght;i++)
+{
+for(int j=i+1;i<size;j++)
+{
+if(a[i]>a[j])
+{
+temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+}
+}
+
+}
+
+void display()
+{
+
+foreach(var item in a)
+{
+console.writeline(item);
+}
+}
+}
+Class Main()
+{
+public static void Main(string args[])
+{
+int n;
+n=convert.toint32(console.readLine());
+Array A1=new Array();
+
+A.init(n);
+A.read();
+A.display();
+
+}
+}

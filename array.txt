@@ -1,0 +1,72 @@
+import java.util.*;
+class Array{
+int arr[],size;
+Array(int n)
+{
+size=n;
+arr=new int [size];
+}
+
+Array(Array t1)
+{
+size=t1.size;
+arr=new int [size];
+int i,j;
+for(i=0;j=size-1;i<size;i++;j--)
+arr[i]=t1.arr[j];
+}
+void Read()
+{
+scanner scan=new scanner(system.in);
+System.out.Println("Enter +size+ array ele);
+for(int i=0;i<size;i++)
+arr[i]=scan.nextInt()
+}
+void display()
+{
+system.out.print("\n array is");
+for(int i=0;i<size;i++)
+system.out.print(arr[i]+"");
+
+}
+
+void add(Array t1,Array t2)
+{
+for(int i=0;i<size;i++)
+arr[i]=t1.arr[i]+t2.arr[i];
+}
+
+}
+
+class Main()
+{
+public static void Main(string args[])
+{
+
+scanner scan=new scanner(system.in);
+int n;
+System.out.print("enter size of array");
+n=scan.nextInt();
+Array A1=new Array(n);
+A1.read();
+A1.display();
+Array A2=new Array(A1);
+A2.display()
+Array A3=new Array(n);
+A3.Add(A1,A2);
+A3.display();
+
+
+
+}
+}
+
+
+
+1 2 3 4 5
+5 4 3 2 1
+6 6 6 6 6 
+
+
+
+

@@ -1,0 +1,117 @@
+class  Person
+{
+
+string name,address;
+int contact;
+
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the name,address and contact");
+name=scan.nextLine();
+address=scan.nextLine();
+contact=scan.nextInt();
+}
+void display()
+{
+system.out.println("name="+name "address="+address "contact="+contact);
+}
+}
+class Staff extends Person{
+string designation;
+int sid,basic,salary;
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the designation,sid ,basic,salary");
+designation=scan.nextLine();
+sid=scan.nextInt();
+basic=scan.nextInt();
+salary=scan.nextInt();
+}
+void display()
+{
+system.out.println("designation="+designation "sid="+sid "basic="+basic"salary="+salary);
+}
+}
+
+class Student extends Person
+{
+int usn,m1,m2,m3;
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the usn,m1 ,m2,m3");
+usn=scan.nextInt();
+m1=scan.nextInt();
+m2=scan.nextInt();
+m3=scan.nextInt();
+}
+void display()
+{
+system.out.println("usn="+usn "m1="+m1 "m2="+m2" m3="+m3);
+}
+}
+
+class Salary extends Staff
+{
+float HRA,da,Ta;
+int totalsalary;
+void calculate()
+{
+HRA=(10/100*basic);
+da=(25/100*basic);
+Ta=(8/100*basic);
+totalsalary=HRA+da+Ta;
+
+}
+void display()
+{
+system.out.println("HRA="+HRA "da="+da "ta="+ta" totalsalary="+ta);
+}
+}
+class Result extends student
+{
+int total;
+float per;
+string res;
+void calculate()
+{
+total=m1+m2+m3;
+per=(total/3.0f);
+string res;
+if(per>=80)
+{
+res="destincation";
+}
+else if(per>=60)
+{
+res="first class";
+}
+else if(per>=35)
+{
+res="pass";
+}
+else{
+res="fail";
+}
+
+
+}
+void display()
+{
+system.out.println("total="+total "per="+per "res="+res");
+}
+}
+class Main
+{
+public static void main(string args[])
+{
+salary s=new salary();
+s.calculate();
+s.display();
+
+Result R=new Result();
+R.calculate();
+R.display();
+}

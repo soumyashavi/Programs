@@ -1,0 +1,66 @@
+*
+* *
+* * *
+* * * *
+* * * * *
+
+For(int i=1;i<=n;i++)//
+{
+For(int j=1;j<=I;j++)/
+{
+Console.write(*);
+}
+Console.writeline();
+}
+Console.Readline();
+
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+
+For(int i=1;i<=n;i++)//
+{
+For(int j=1;j<=I;j++)/
+{
+Console.write(j);
+}
+Console.writeline();
+}
+Console.Readline();
+
+
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+for (int i = 1; i <= 5; i++)
+        {
+            for (int j = 1; j <= i; j++)
+            {
+                Console.Write(i);
+            }
+            Console.WriteLine();
+        }
+        Console.ReadKey(); 
+
+12345
+1234
+123
+12
+1
+
+for (int i = n; i >= 0; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                    Console.Write(j.ToString());
+                Console.WriteLine();
+            }
+
+			
+
+

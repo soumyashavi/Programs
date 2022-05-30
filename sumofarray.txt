@@ -1,0 +1,38 @@
+WAP to read array of N integers and find the sum of all the elements
+
+{
+int a[],siz;
+void inti(int n)
+{
+siz=n;
+a=new int[siz];
+}
+void read()
+{
+console.writeline("enter +siz+ array");
+for(int i=0;i<siz;i++)
+a[i]=convert.Toint32(console.readLine());
+
+}
+
+void display()
+{
+console.writeline("sum of array is");
+sum=sum+a[i];
+console.writeline(sum);
+}
+}
+Class Main()
+{
+public static void Main(string args[])
+{
+int n;
+n=convert.toint32(console.readLine());
+Array A1=new Array();
+
+A.init(n);
+A.read();
+A.display();
+
+}
+}
