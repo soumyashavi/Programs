@@ -1,0 +1,88 @@
+class  Person
+{
+string name,address;
+int age;
+
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the value of dim1,dim2");
+name=scan.nextLine();
+age=scan.nextInt();
+address=scan.nextInt();
+}
+void display()
+{
+system.out.println("name="+name "age="+age  "address="+address);
+}
+void calculate()
+{
+}
+}
+class staff extends person
+{
+int sid;
+string designation;
+int salary;
+
+void read()
+{
+super.read();
+scanner scan=new scanner(system.in);
+system.out.println("enter the sid,designation,salary");
+
+
+for(int i=0;i<=5;i++)
+{
+sid=scan.nextInt();
+designation=scan.nextLine();
+salary=scan.nextInt();
+}
+}
+void display()
+{
+super.display();
+system.out.println("sid="+sid "designation="+designation "salary="+salary);
+}
+}
+
+class student extends person
+{
+int usn,m1,m2;
+
+void read()
+{
+super.read();
+scanner scan=new scanner(system.in);
+system.out.println("enter the sid,designation,salary");
+for(int i=0;i<=5;i++)
+{
+usn=scan.nextInt();
+m1=scan.nextInt();
+m2=scan.nextInt();
+}
+
+}
+void display()
+{
+super.display();
+system.out.println("usn="+usn "m1="+m1 "m2="+m2);
+}
+}
+
+class Main
+{
+public static void main(string args[])
+{
+
+Person P;
+		P=new Staff();
+		P.read();
+		P.display();
+		P=new Student();
+		P.read();
+		P.display();
+
+
+
+}

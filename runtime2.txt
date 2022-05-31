@@ -1,0 +1,71 @@
+abstract class  figure
+{
+int dim1,dim2;
+void read()
+{
+scanner scan=new scanner(system.in);
+system.out.println("enter the value of dim1,dim2");
+dim1=scan.nextInt();
+dim2=scan.nextInt();
+}
+void display()
+{
+system.out.println("dim1="+dim1 "dim2="+dim2);
+}
+abstract void calculate1();
+abstract void calculate2();
+}
+ class rectangle extends figure
+{
+float area;
+void calculate1()
+{
+super.read();
+area=(dim1*dim2);
+
+}
+void display()
+{
+super.display();
+system.out.println("area="+area);
+}
+void calculate2()
+{
+}
+}
+
+ class triangle extends figure
+{
+float area;
+void calculate2()
+{
+super.read();
+area=(dim1*dim2)/2;
+
+}
+void display()
+{
+super.display();
+system.out.println("area="+area);
+}
+void calculate1()
+{
+}
+}
+
+
+class Main
+{
+public static void main(string args[])
+{
+figure f;
+f=new rectangle();
+f.calculate1();
+f.display();
+
+
+f=new triangle();
+f.calculate2();
+f.display();
+
+}
